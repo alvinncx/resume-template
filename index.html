@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Alvin Ng - CV</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>    
+  </head>
+  <body class="p-5">
+    <div class="flex">
+      <div>
+        <p>
+          Full-stack product engineer with a passion for changing lives with software technology. 5+ years of experience taking software to the market. Skilled in building cross-functional product and engineering teams. Exceptional in decision making and planning skills across business and technical context.
+        </p>
+        <h3 class="font-light text-2xl my-3">
+          Experience
+        </h3>
+        
+      </div>
+      <script id="experience-template" type="text/x-handlebars-template">
+        {{#each this}}
+          <div class="mb-5">
+          <div class="flex justify-between">
+            <div>
+              <h4 class="text-xl font-bold">
+                {{ this.title }}
+              </h4>
+              <h5 class="italic">
+                {{ company }}
+              </h5>
+            </div>
+            <div>
+              {{ date }}
+            </div>
+          </div>
+          <div>
+            <p class="my-2">
+              {{ summary }}
+            </p> 
+            <ul class="list-inside list-disc">
+              {{#each list}}
+              <li>{{ this }}</li>
+              {{/each}}
+            </ul>
+          </div>
+          </div>
+        {{/each}}
+      </script>
+    </div>
+    <script src="./templating.js" ></script>
+  </body>
+</html>
