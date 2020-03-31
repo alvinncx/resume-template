@@ -80,10 +80,10 @@ var source = document.getElementById("experience-template").innerHTML;
 var template = Handlebars.compile(source);
 
 var html = template(experiences);
-$(document.body).append(html);
+$("#left").append(html);
 
 var source = document.getElementById("personal-template").innerHTML;
 var template = Handlebars.compile(source);
 
 var html = template(personals);
-$(document.body).append(html);
+$("#left").append(html);

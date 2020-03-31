@@ -9,7 +9,7 @@
   </head>
   <body class="p-5">
     <div class="flex">
-      <div>
+      <div id="left" >
         <p>
           Full-stack product engineer with a passion for changing lives with software technology. 5+ years of experience taking software to the market. Skilled in building cross-functional product and engineering teams. Exceptional in decision making and planning skills across business and technical context.
         </p>
@@ -21,29 +21,29 @@
           
           {{#each this}}
             <div class="mb-5">
-            <div class="flex justify-between">
-              <div>
-                <h4 class="text-xl font-bold">
-                  {{ title }}
-                </h4>
-                <h5 class="italic">
-                  {{ company }}
-                </h5>
+              <div class="flex justify-between">
+                <div>
+                  <h4 class="text-xl font-bold">
+                    {{ title }}
+                  </h4>
+                  <h5 class="italic">
+                    {{ company }}
+                  </h5>
+                </div>
+                <div>
+                  {{ date }}
+                </div>
               </div>
               <div>
-                {{ date }}
+                <p class="my-2">
+                  {{ summary }}
+                </p> 
+                <ul class="list-inside list-disc">
+                  {{#each list}}
+                  <li>{{ this }}</li>
+                  {{/each}}
+                </ul>
               </div>
-            </div>
-            <div>
-              <p class="my-2">
-                {{ summary }}
-              </p> 
-              <ul class="list-inside list-disc">
-                {{#each list}}
-                <li>{{ this }}</li>
-                {{/each}}
-              </ul>
-            </div>
             </div>
           {{/each}}
         </script>
@@ -56,28 +56,31 @@
 
           {{#each this}}
             <div class="mb-5">
-            <div class="flex justify-between">
-              <div>
-                <h4 class="text-xl font-bold">
-                  {{ title }}
-                </h4>
+              <div class="flex justify-between">
+                <div>
+                  <h4 class="text-xl font-bold">
+                    {{ title }}
+                  </h4>
+                </div>
+                <div>
+                  {{ date }}
+                </div>
               </div>
               <div>
-                {{ date }}
+                <ul class="list-inside list-disc">
+                  {{#each list}}
+                  <li>{{ this }}</li>
+                  {{/each}}
+                </ul>
               </div>
-            </div>
-            <div>
-              <ul class="list-inside list-disc">
-                {{#each list}}
-                <li>{{ this }}</li>
-                {{/each}}
-              </ul>
-            </div>
             </div>
           {{/each}}
         </script>
       </div>
-
+      <div id="right" class="ml-10">
+        lasdjfljsdlfkjsadlfjsadl
+      </div>
+      
     </div>
     <script src="./templating.js" ></script>
   </body>
