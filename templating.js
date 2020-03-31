@@ -48,9 +48,42 @@ var experiences = [
   }
 ]
 
+var personals = [
+  {
+    title: "Startup Coach - UNFRAMED ",
+    date: "Aug 2015 - Dec 2018",
+    list: [
+      "Coached 20+ teams across 3 social enterprise programmes to build sustainable startups.",
+      "- Co-developed and conducted product development workshops. ",
+    ]
+  },
+  {
+    title: "CaptureBin.dev",
+    date: "Sep 2019",
+    list: [
+      "Built a developer tool that helps users capture and inspect HTTP requests in real time. Built with the Phoenix/Elixir stack.",
+      "https://capturebin.dev",
+    ]
+  },
+  {
+    title: "Expressor",
+    date: "Aug 2018",
+    list: [
+      "Built a web-based, interactive calculator that evaluates expressions, variables & conditions. Built with ReactJS and Redux.",
+      "https://github.com/alvinncx/expressor",
+    ]
+  }
+]
+
 
 var source = document.getElementById("experience-template").innerHTML;
 var template = Handlebars.compile(source);
 
 var html = template(experiences);
+$(document.body).append(html);
+
+var source = document.getElementById("personal-template").innerHTML;
+var template = Handlebars.compile(source);
+
+var html = template(personals);
 $(document.body).append(html);

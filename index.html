@@ -13,40 +13,71 @@
         <p>
           Full-stack product engineer with a passion for changing lives with software technology. 5+ years of experience taking software to the market. Skilled in building cross-functional product and engineering teams. Exceptional in decision making and planning skills across business and technical context.
         </p>
-        <h3 class="font-light text-2xl my-3">
-          Experience
-        </h3>
         
+        <script id="experience-template" type="text/x-handlebars-template">
+          <h3 class="font-light text-2xl my-3">
+            Experience
+          </h3>
+          
+          {{#each this}}
+            <div class="mb-5">
+            <div class="flex justify-between">
+              <div>
+                <h4 class="text-xl font-bold">
+                  {{ title }}
+                </h4>
+                <h5 class="italic">
+                  {{ company }}
+                </h5>
+              </div>
+              <div>
+                {{ date }}
+              </div>
+            </div>
+            <div>
+              <p class="my-2">
+                {{ summary }}
+              </p> 
+              <ul class="list-inside list-disc">
+                {{#each list}}
+                <li>{{ this }}</li>
+                {{/each}}
+              </ul>
+            </div>
+            </div>
+          {{/each}}
+        </script>
+
+        
+        <script id="personal-template" type="text/x-handlebars-template">
+          <h3 class="font-light text-2xl my-3">
+            Personal Pursuits
+          </h3>
+
+          {{#each this}}
+            <div class="mb-5">
+            <div class="flex justify-between">
+              <div>
+                <h4 class="text-xl font-bold">
+                  {{ title }}
+                </h4>
+              </div>
+              <div>
+                {{ date }}
+              </div>
+            </div>
+            <div>
+              <ul class="list-inside list-disc">
+                {{#each list}}
+                <li>{{ this }}</li>
+                {{/each}}
+              </ul>
+            </div>
+            </div>
+          {{/each}}
+        </script>
       </div>
-      <script id="experience-template" type="text/x-handlebars-template">
-        {{#each this}}
-          <div class="mb-5">
-          <div class="flex justify-between">
-            <div>
-              <h4 class="text-xl font-bold">
-                {{ this.title }}
-              </h4>
-              <h5 class="italic">
-                {{ company }}
-              </h5>
-            </div>
-            <div>
-              {{ date }}
-            </div>
-          </div>
-          <div>
-            <p class="my-2">
-              {{ summary }}
-            </p> 
-            <ul class="list-inside list-disc">
-              {{#each list}}
-              <li>{{ this }}</li>
-              {{/each}}
-            </ul>
-          </div>
-          </div>
-        {{/each}}
-      </script>
+
     </div>
     <script src="./templating.js" ></script>
   </body>
