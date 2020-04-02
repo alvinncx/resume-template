@@ -2,7 +2,7 @@ var experiences = [
   {
     title: "Head of Product Engineering",
     company: "NodeFlair",
-    date: "Dec 2019 - Current",
+    date: "Singapore • Dec 2019 - Current",
     summary: "Leading a cross-functional team of software engineers and product managers to build features a 3 sided digital platform for the tech recruitment market.",
     list: [
       "70% of time spent on designing and writing code, 30% on planning, code reviews and retrospectives",
@@ -18,7 +18,7 @@ var experiences = [
   {
     title: "Business Unit Manager",
     company: "Prime Technologies",
-    date: "Jun 2018 - Nov 2019",
+    date: "Singapore • Jun 2018 - Nov 2019",
     summary: "Led a software engineering business unit comprising 7 engineers to build customised enterprise resource planning systems for the business group.",
     list: [
       "50% of time spent on managing software projects, 30% on business planning, and 20% on technical advisory",
@@ -32,7 +32,7 @@ var experiences = [
   {
     title: "Product Manager / Full-Stack Engineer",
     company: "AfterYou",
-    date: "Nov 2014 - June 2018",
+    date: "Singapore • Nov 2014 - Jun 2018",
     summary: "Led a cross-functional team comprising of designers and engineers to grow the AfterYou Home Services platform from 0 to 16,000 users.",
     list: [
       "50% of time spent on product management, 50% on writing code",
@@ -48,13 +48,32 @@ var experiences = [
   }
 ]
 
+var technologies = [
+  {
+    heading: "Programming",
+    list: ["Ruby", "Python", "Elixir", "Javascript"].join(", ")
+  },
+  {
+    heading: "Web",
+    list: ["React.js", "Angular.js", "CSS", "Webpack", "Ruby on Rails", "Django", "Phoenix", "Node.js"].join(", ")
+  },
+  {
+    heading: "Databases",
+    list: ["PostgresSQL", "ElasticSearch"].join(", ")
+  },
+  {
+    heading: "Server / Cloud",
+    list: ["MacOS", "Linux", "AWS", "Vultr"].join(", ")
+  }
+]
+
 var personals = [
   {
     title: "Startup Coach - UNFRAMED ",
     date: "Aug 2015 - Dec 2018",
     list: [
       "Coached 20+ teams across 3 social enterprise programmes to build sustainable startups.",
-      "- Co-developed and conducted product development workshops. ",
+      "Co-developed and conducted product development workshops. ",
     ]
   },
   {
@@ -75,15 +94,40 @@ var personals = [
   }
 ]
 
+var educations = [
+  {
+    title: "National University of Singapore, B.Eng, Engineering Science",
+    date: "Singapore • 2009 - 2014",
+    subtext: "Major in Computational Engineering Sciences"
+  },
+  {
+    title: "KTH Royal Institute of Technology",
+    date: "Stockholm, Sweden • 2011 - 2012",
+    subtext: "Minor in Technopreneurship"
+  }
+]
+
 
 var source = document.getElementById("experience-template").innerHTML;
 var template = Handlebars.compile(source);
 
 var html = template(experiences);
-$("#left").append(html);
+$("#experiences").append(html);
 
 var source = document.getElementById("personal-template").innerHTML;
 var template = Handlebars.compile(source);
 
 var html = template(personals);
-$("#left").append(html);
+$("#personal").append(html);
+
+var source = document.getElementById("technology-template").innerHTML;
+var template = Handlebars.compile(source);
+
+var html = template(technologies);
+$("#technologies").append(html);
+
+var source = document.getElementById("education-template").innerHTML;
+var template = Handlebars.compile(source);
+
+var html = template(educations);
+$("#educations").append(html);

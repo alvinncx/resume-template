@@ -10,77 +10,170 @@
   <body class="p-5">
     <div class="flex">
       <div id="left" >
-        <p>
-          Full-stack product engineer with a passion for changing lives with software technology. 5+ years of experience taking software to the market. Skilled in building cross-functional product and engineering teams. Exceptional in decision making and planning skills across business and technical context.
-        </p>
-        
-        <script id="experience-template" type="text/x-handlebars-template">
-          <h3 class="font-light text-2xl my-3">
-            Experience
-          </h3>
+        <div class="flex justify-between">
+          <div>
+            <div class="text-3xl">Alvin Ng</div> 
+            <div>
+              Tech Lead, Full-stack Engineer
+            </div>
+          </div>
           
-          {{#each this}}
-            <div class="mb-5">
-              <div class="flex justify-between">
-                <div>
-                  <h4 class="text-xl font-bold">
-                    {{ title }}
-                  </h4>
-                  <h5 class="italic">
-                    {{ company }}
-                  </h5>
-                </div>
-                <div>
-                  {{ date }}
-                </div>
-              </div>
-              <div>
-                <p class="my-2">
-                  {{ summary }}
-                </p> 
-                <ul class="list-inside list-disc">
-                  {{#each list}}
-                  <li>{{ this }}</li>
-                  {{/each}}
-                </ul>
-              </div>
-            </div>
-          {{/each}}
-        </script>
+          <div class="text-right">
+            <p>
+              Phone: +65 9172 5582
+            </p>
+            <p>
+              Email: alvinng15@gmail.com
+            </p>
+            <p>
+              Linkedin: https://www.linkedin.com/in/alvinncx/
+            </p>
+            <p>
+              GitHub: https://github.com/alvinncx
+            </p>
+          </div>
+        </div>
 
+        <div class="border-2 border-black my-8 border-blue-600"></div>
+
+        <div class="flex">
+          <div class="uppercase font-bold text-blue-600" style="flex: 1;">
+            Objective
+          </div>
+          <div style="flex: 5;">
+            Full-stack product engineer with a passion for changing lives with software technology. 
+            5+ years of experience taking software to the market. Skilled in building cross-functional product and engineering teams. Exceptional in decision making and planning skills across business and technical context.
+          </div>
+        </div>
+
+        <div class="border-2 border-black my-8 border-blue-600"></div>
+
+        <div class="flex">
+          <div class="uppercase font-bold text-blue-600" style="flex: 1;">
+            Experience
+          </div>
+          <div id="experiences" style="flex: 5;">
+            <div>
+              <script id="experience-template" type="text/x-handlebars-template">
+                {{#each this}}
+                  <div class="mb-5">
+                    <div class="">
+                      <div>
+                        <div class="uppercase">
+                          <span class="font-bold text-blue-600">{{ title }} </span> • {{ company }}
+                        </div>
+                      </div>
+                      <div class="text-gray-600">
+                        {{ date }}
+                      </div>
+                    </div>
+                    <div>
+                      <p class="my-2">
+                        {{ summary }}
+                      </p> 
+                      <ul class="list-inside list-disc">
+                        {{#each list}}
+                        <li>{{ this }}</li>
+                        {{/each}}
+                      </ul>
+                    </div>
+                  </div>
+                {{/each}}
+              </script>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-2 border-black my-8 border-blue-600"></div>
+
+        <div class="flex">
+          <div class="uppercase font-bold text-blue-600" style="flex: 1;">
+            Technologies
+          </div>
+          <div id="technologies" style="flex: 5;">
+            <div>
+              <script id="technology-template" type="text/x-handlebars-template">
+                {{#each this}}
+                  <div class="mb-5">
+                    <div class="uppercase">
+                      <span class="font-bold ">{{ heading }} </span>
+                    </div>
+                    <div>
+                      <p class="my-1">
+                        {{ list }}
+                      </p> 
+                    </div>
+                  </div>
+                {{/each}}
+              </script>
+            </div>
+          </div>
+        </div>
         
-        <script id="personal-template" type="text/x-handlebars-template">
-          <h3 class="font-light text-2xl my-3">
-            Personal Pursuits
-          </h3>
+        <div class="border-2 border-black my-8 border-blue-600"></div>
 
-          {{#each this}}
-            <div class="mb-5">
-              <div class="flex justify-between">
-                <div>
-                  <h4 class="text-xl font-bold">
-                    {{ title }}
-                  </h4>
+        <div class="flex">
+          <div class="uppercase font-bold text-blue-600" style="flex: 1;">
+            Personal Pursuits
+          </div>
+          <div id="personal" style="flex: 5;">
+            <script id="personal-template" type="text/x-handlebars-template">
+              {{#each this}}
+                <div class="mb-5">
+                  <div class="">
+                    <div>
+                      <div class="uppercase font-bold text-blue-600">
+                        {{ title }}
+                      </div>
+                    </div>
+                    <div class="text-gray-600">
+                      {{ date }}
+                    </div>
+                  </div>
+                  <div>
+                    <ul class="list-inside list-disc">
+                      {{#each list}}
+                      <li>{{ this }}</li>
+                      {{/each}}
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  {{ date }}
+              {{/each}}
+            </script>
+          </div>
+        </div>
+        
+        <div class="border-2 border-black my-8 border-blue-600"></div>
+
+        <div class="flex">
+          <div class="uppercase font-bold text-blue-600" style="flex: 1;">
+            Education
+          </div>
+          <div id="educations" style="flex: 5;">
+            <script id="education-template" type="text/x-handlebars-template">
+              {{#each this}}
+                <div class="mb-5">
+                  <div class="">
+                    <div>
+                      <div class="uppercase font-bold text-blue-600">
+                        {{ title }}
+                      </div>
+                    </div>
+                    <div class="text-gray-600">
+                      {{ date }}
+                    </div>
+                  </div>
+                  <div>
+                    <div>{{ subtext }}</div>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <ul class="list-inside list-disc">
-                  {{#each list}}
-                  <li>{{ this }}</li>
-                  {{/each}}
-                </ul>
-              </div>
-            </div>
-          {{/each}}
-        </script>
+              {{/each}}
+            </script>
+          </div>
+        </div>
+        
+        
       </div>
-      <div id="right" class="ml-10">
-        lasdjfljsdlfkjsadlfjsadl
-      </div>
-      
     </div>
     <script src="./templating.js" ></script>
   </body>
