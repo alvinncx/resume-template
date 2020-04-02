@@ -107,6 +107,25 @@ var educations = [
   }
 ]
 
+var skills = [
+  {
+    title: "Web Application Development",
+    summary: "Hands-on software engineer with a track record of designing, implementing and launching applications. Able to use a wide repetiore of web related technologies to address problems.",
+  },
+  {
+    title: "Cross domain knowledge synthesis",
+    summary: "Possess experiences and knowledge to make sense of information over technical, business and user domains. Able to guide and maintain balance in decision making affecting multiple domains.",
+  },
+  {
+    title: "People management",
+    summary: "Experience in managing both up and down. Able to comminicate and express in both business and technical context for managing expectation between stakeholders.",
+  },
+  {
+    title: "Mentoring",
+    summary: "Mentored more than 20+ individuals thoughout business and technical domains to work on personal and business growth.",
+  }
+]
+
 
 var source = document.getElementById("experience-template").innerHTML;
 var template = Handlebars.compile(source);
@@ -131,3 +150,9 @@ var template = Handlebars.compile(source);
 
 var html = template(educations);
 $("#educations").append(html);
+
+var source = document.getElementById("skill-template").innerHTML;
+var template = Handlebars.compile(source);
+
+var html = template(skills);
+$("#skills").append(html);

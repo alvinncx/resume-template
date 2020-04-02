@@ -6,6 +6,12 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>    
+    <style>
+      body {
+        font-size: 0.9em;
+      }
+      
+    </style>
   </head>
   <body class="p-5">
     <div class="flex">
@@ -41,8 +47,38 @@
             Objective
           </div>
           <div style="flex: 5;">
-            Full-stack product engineer with a passion for changing lives with software technology. 
-            5+ years of experience taking software to the market. Skilled in building cross-functional product and engineering teams. Exceptional in decision making and planning skills across business and technical context.
+            Seeking an <strong>engineering manager or senior engineer role</strong> involved in software development and decision-making.
+            As a full-stack product engineer, I enjoy building solutions that can directly address problems within a market or company.
+          </div>
+        </div>
+
+        <div class="border-2 border-black my-8 border-blue-600"></div>
+
+        <div class="flex">
+          <div class="uppercase font-bold text-blue-600" style="flex: 1;">
+            Key Skills
+          </div>
+          <div id="skills" style="flex: 5;">
+            <div>
+              <script id="skill-template" type="text/x-handlebars-template">
+                {{#each this}}
+                  <div class="mb-5">
+                    <div class="">
+                      <div>
+                        <div class="uppercase">
+                          <span class="font-bold text-blue-600">{{ title }} </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="my-2">
+                        {{ summary }}
+                      </p> 
+                    </div>
+                  </div>
+                {{/each}}
+              </script>
+            </div>
           </div>
         </div>
 
