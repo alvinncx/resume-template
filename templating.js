@@ -3,20 +3,24 @@ var experiences = [
     title: "Head of Product Engineering",
     company: "NodeFlair",
     date: "Singapore • Dec 2019 - Current",
-    summary: "Leading a cross-functional team of software engineers and product managers to build features a 3 sided digital platform for the tech recruitment market.",
+    summary: "Leading a cross-functional team of software engineers to build features for a 3 sided digital platform for the tech recruitment market.",
     list: [
-      "70% of time spent on designing and writing code, 30% on planning, code reviews and retrospectives",
-      "Wrote 150+ feature and unit tests for a legacy code base that started with none",
-      "Implemented ElasticSearch and full-text search indexing strategies for our talents database of 25,000",
+      "70% of time spent on designing and writing code, 30% on system architecture planning, code reviews and retrospectives",
+      "Raised test coverage from 0% to 60% by writing hundreds of tests.",
+      "Implemented ElasticSearch and full-text search indexing strategies for our database of 25,000",
+      "Reduced the query time of most commonly used queries by a factor of 10x",
+      "Improved efficiency of talent hunting team by 2x",
+      "Refactored major parts of the query and state management logic",
       "Cut server costs by 80% through capacity planning",
-      "Set up continuous integration, automated testing and load balancing architectures for production deployments",
-      "Cut time-to-market by 5x through strategic software feature planning",
+      "Improved developer confidence by setting up continuous integration and automated testing tool chain",
+      "Cut time-to-market by 5x by modifying how we plan features and builds",
+      "Increased deployment frequency by 5x by implementing blue green deployments",
       "Introduced functional programming methodologies to greatly simplify complex business logic",
-      "Technologies used: Ruby/Ruby on Rails, Javascript/React.js, CSS, PostgreSQL, Webpack, AWS, ElasticSearch, CircleCI, Github, JIRA"
+      "Technologies used: Ruby/Ruby on Rails, Javascript/React.js, CSS, PostgreSQL, Webpack, AWS, ElasticSearch, Chrome Web Extensions, CircleCI, Github, JIRA"
     ]
   },
   {
-    title: "Business Unit Manager",
+    title: "Technical Projects Manager",
     company: "Prime Technologies",
     date: "Singapore • Jun 2018 - Nov 2019",
     summary: "Led a software engineering business unit comprising 7 engineers to build customised enterprise resource planning systems for the business group.",
@@ -26,13 +30,15 @@ var experiences = [
       "Managed 3 software projects with agile methodology",
       "Managed, planned and projected project workloads and corresponding human resources",
       "Structured and recovered project costs amounting to about $500,000",
-      "Held financial responsibility for business margins, project budgeting, human resource planning and R&D budgets",
+      "Wrote shell scripts to cut technical audit time by 100x",
+      "Wrote and audited documents for software standard procedures",
+      "Held financial responsibility for project margins, budgeting, human resource planning and R&D budgets",
     ]
   },
   {
     title: "Product Manager / Full-Stack Engineer",
     company: "AfterYou",
-    date: "Singapore • Nov 2014 - Jun 2018",
+    date: "Singapore • Nov 2014 - May 2018",
     summary: "Led a cross-functional team comprising of designers and engineers to grow the AfterYou Home Services platform from 0 to 16,000 users.",
     list: [
       "50% of time spent on product management, 50% on writing code",
@@ -109,20 +115,16 @@ var educations = [
 
 var skills = [
   {
-    title: "Web Application Development",
-    summary: "Hands-on software engineer with a track record of designing, implementing and launching applications. Able to use a wide repetiore of web related technologies to address problems.",
-  },
-  {
-    title: "Cross domain knowledge synthesis",
-    summary: "Possess experiences and knowledge to make sense of information over technical, business and user domains. Able to guide and maintain balance in decision making affecting multiple domains.",
+    title: "Product-centric Software Development",
+    summary: "Hands-on software engineer with a track record of designing, implementing and launching applications with the user in mind. Able to appreciate user and business concerns, and prioritise for minimum time to market.",
   },
   {
     title: "People management",
-    summary: "Experience in managing both up and down. Able to comminicate and express in both business and technical context for managing expectation between stakeholders.",
+    summary: "Experience in managing both up and down. Able to communicate and express in business context for managing executive stakeholders. Able to communicate, direct and manage teams for effective work output.",
   },
   {
     title: "Mentoring",
-    summary: "Mentored more than 20+ individuals thoughout business and technical domains to work on personal and business growth.",
+    summary: "Mentored more than 10+ individuals on personal and technical growth. Advised more than 20+ teams on matters of team effectiveness, leadership and decision making.",
   }
 ]
 
