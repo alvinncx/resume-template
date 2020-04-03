@@ -3,36 +3,73 @@ var experiences = [
     title: "Head of Product Engineering",
     company: "NodeFlair",
     date: "Singapore • Dec 2019 - Current",
-    summary: "Leading a cross-functional team of software engineers to build features for a 3 sided digital platform for the tech recruitment market.",
+    summary: "Leading a cross-functional team of software engineers to build features for a 3 sided digital platform for the tech recruitment market. 70% of time spent on designing and writing code, 30% on system architecture planning, code reviews and retrospectives.",
+    subsections: [
+      { 
+        heading: "Hands-on software engineering",
+        items: [
+          "Shipped 90% of features within schedule",
+          "Raised test coverage from 0% to 60% by writing hundreds of tests",
+          "Refactored major parts of state management using finite state machines",
+          "Cut query response times by 2x by rewriting SQL statements and optimising ORM models",
+          "Cut AWS server costs by 60% through capacity analysis and planning",
+          "Introduced functional programming methodologies to greatly simplify complex business logic"
+        ]
+      },
+      {
+        heading: "Raised productivity and morale of engineering team",
+        items: [
+          "Cut frontend built times by 20x by reconfiguring webpack in our development workflow",
+          "Improved deployment confidence by setting up continuous integration and automated testing tool chain",
+          "Increased release cadence by 3x by implementing trunk based developement",
+          "Eliminated 10% of dead code through code analysis",
+          "Increased deployment frequency from weekly to daily by implementing blue-green deployments",
+          "Increased developer competence by conducting monthly tech retrospectives",
+        ]
+      },
+      { 
+        heading: "Conceptualised and built internal tools",
+        items: [
+          "Improved overall effectiveness of talent sourcing team by 3x",
+          "Increased utilisation of internal search tools by 5x by collaborating with talents team to revamp search heuristics",
+          "Single-handedly deployed ElasticSearch full-text search for our database of 25,000",
+          "Reduced mishunting rates by 90% by creating a Google Chrome Extension for detecting existing users within LinkedIn pages"
+        ]
+      },
+    ],
     list: [
-      "70% of time spent on designing and writing code, 30% on system architecture planning, code reviews and retrospectives",
-      "Raised test coverage from 0% to 60% by writing hundreds of tests.",
-      "Implemented ElasticSearch and full-text search indexing strategies for our database of 25,000",
-      "Reduced the query time of most commonly used queries by a factor of 10x",
-      "Improved efficiency of talent hunting team by 2x",
-      "Refactored major parts of the query and state management logic",
-      "Cut server costs by 80% through capacity planning",
-      "Improved developer confidence by setting up continuous integration and automated testing tool chain",
-      "Cut time-to-market by 5x by modifying how we plan features and builds",
-      "Increased deployment frequency by 5x by implementing blue green deployments",
-      "Introduced functional programming methodologies to greatly simplify complex business logic",
-      "Technologies used: Ruby/Ruby on Rails, Javascript/React.js, CSS, PostgreSQL, Webpack, AWS, ElasticSearch, Chrome Web Extensions, CircleCI, Github, JIRA"
+      "Technologies used: Ruby on Rails, React.js, CSS, PostgreSQL, Webpack, AWS, ElasticSearch, Chrome Web Extensions, CircleCI, Github, JIRA"
     ]
   },
   {
     title: "Technical Projects Manager",
     company: "Prime Technologies",
     date: "Singapore • Jun 2018 - Nov 2019",
-    summary: "Led a software engineering business unit comprising 7 engineers to build customised enterprise resource planning systems for the business group.",
+    summary: "Led a software engineering business unit comprising 5 engineers to build customised enterprise resource planning systems for the business group. 70% of time spent on managing software projects, 30% on technical advisory",
+    subsections: [{
+      heading: "Technical Project Management",
+      items: [
+        "Managed 4 software projects with agile methodology",
+        "Achieved 90% of release schedule by managing, planning and prioritised features with stakeholders",
+        "Cut technical audit time by 50x by writing supporting shell scripts",
+        "Cut time taken to discover error by 2 days by writing scripts to predict behavior",
+        "Executed a technical proof-of-concept for a multi-tenancy web hosting system",
+        "Recovered 20% of project budget by reallocating engineers to suitable projects",
+        "Held financial responsibility for project margins, budgeting, human resource planning and R&D budgets",
+      ]
+    },
+    {
+      heading: "Provided Technical Advisory and Foresight",
+      items: [
+        "Served as chief technical advisor for the entire business group in matters of software engineering and technology",
+        "Mediated technical meetings relating to the Open Electricity Market",
+        "Saved $50,000 in costs by conducting technical and security audits in-house",
+        "Wrote standard operating procedures for software engineering processes and error handling processes",
+        "Spearheaded a new data protection and security initiative to protect the business group against data breaches",
+      ]
+    }],
     list: [
-      "50% of time spent on managing software projects, 30% on business planning, and 20% on technical advisory",
-      "Served as chief technical advisor for the entire business group in matters of software engineering and technology.",
-      "Managed 3 software projects with agile methodology",
-      "Managed, planned and projected project workloads and corresponding human resources",
-      "Structured and recovered project costs amounting to about $500,000",
-      "Wrote shell scripts to cut technical audit time by 100x",
-      "Wrote and audited documents for software standard procedures",
-      "Held financial responsibility for project margins, budgeting, human resource planning and R&D budgets",
+      
     ]
   },
   {
@@ -120,7 +157,7 @@ var skills = [
   },
   {
     title: "People management",
-    summary: "Experience in managing both up and down. Able to communicate and express in business context for managing executive stakeholders. Able to communicate, direct and manage teams for effective work output.",
+    summary: "Experience in managing both up and down. Able to influence and manage executive stakeholders by and expressing technology in business context. Able to communicate, direct and manage teams for effective work output.",
   },
   {
     title: "Mentoring",
