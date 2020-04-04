@@ -36,9 +36,6 @@ var experiences = [
           "Reduced mishunting rates by 90% by creating a Google Chrome Extension for detecting existing users within LinkedIn pages"
         ]
       },
-    ],
-    list: [
-      "Technologies used: Ruby on Rails, React.js, CSS, PostgreSQL, Webpack, AWS, ElasticSearch, Chrome Web Extensions, CircleCI, Github, JIRA"
     ]
   },
   {
@@ -50,7 +47,7 @@ var experiences = [
       heading: "Technical Project Management",
       items: [
         "Managed 4 software projects with agile methodology",
-        "Achieved 90% of release schedule by managing, planning and prioritised features with stakeholders",
+        "Achieved 90% of release schedule by managing and prioritising build with engineers",
         "Cut technical audit time by 50x by writing supporting shell scripts",
         "Cut time taken to discover error by 2 days by writing scripts to predict behavior",
         "Executed a technical proof-of-concept for a multi-tenancy web hosting system",
@@ -59,34 +56,41 @@ var experiences = [
       ]
     },
     {
-      heading: "Provided Technical Advisory and Foresight",
+      heading: "Technical Advisory and Foresight",
       items: [
-        "Served as chief technical advisor for the entire business group in matters of software engineering and technology",
+        "Served as chief technical advisor for the entire business group in matters of software engineering",
         "Mediated technical meetings relating to the Open Electricity Market",
         "Saved $50,000 in costs by conducting technical and security audits in-house",
         "Wrote standard operating procedures for software engineering processes and error handling processes",
         "Spearheaded a new data protection and security initiative to protect the business group against data breaches",
       ]
-    }],
-    list: [
-      
-    ]
+    }]
   },
   {
     title: "Product Manager / Full-Stack Engineer",
     company: "AfterYou",
     date: "Singapore • Nov 2014 - May 2018",
-    summary: "Led a cross-functional team comprising of designers and engineers to grow the AfterYou Home Services platform from 0 to 16,000 users.",
-    list: [
-      "50% of time spent on product management, 50% on writing code",
-      "Collaborated with multiple stakeholders to conceptualise 'Grab for Home Services' platform in Singapore, raising $600,000 in funding",
-      "Developed product roadmap, metrics and release calendar",
-      "Designed and engineered early systems to support a 3 sided platform that facilitates matchmaking and electronic payments.",
-      "Implemented user research and usability testing workflows to guide our frontend UI designs",
-      "Strategised and launched and digital marketing campaigns, beating market CPC average by 20% margin.",
-      "Developed and refined customer service engagement rules",
-      "Supported CTO in all frontend development duties.",
-      "Technologies used: Javascript/Angular.js, Python/Django, CSS, Node.js, Stripe, Grunt.js, Intercom, Google Analytics",
+    summary: "Led a cross-functional team comprising of designers and engineers to grow the AfterYou Home Services platform from 0 to 16,000 users. 50% of time spent on product management, 50% on writing code",
+    subsections: [{
+      heading: "Hands-on software engineering",
+      items: [
+        "Single-handedly built the entire web application in 2 months to serve initial 2000 users",
+        "Provided technical experitise to conceptualise 'Grab for Home Services' platform in Singapore and raised $600,000 in funding",
+        "Decreased server maintenance time to practically zero by choosing serverless platform",
+        "Formulated and built a ranking algorithm using geo-coordinates and behaviorial patterns",
+        "Increased platform retention rate by implementing e-payment systems and in-app chat",
+        "Supported new CTO in all frontend and backend development duties."
+      ]
+    },
+    {
+      heading: "Product Management",
+      items: [
+        "Developed product roadmap, metrics and release calendar",
+        "Achieved 13% month-on-month growth through careful product marketing and engineering",
+        "Kept abadoned feature to less than 5% by implementing user research and usability testing",
+        "Outperformed market CPC average by 30% margin by carefully optimising paid advertisement platforms",
+      ]
+    }
     ]
   }
 ]
