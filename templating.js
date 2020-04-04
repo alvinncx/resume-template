@@ -31,7 +31,7 @@ var experiences = [
         heading: "Conceptualised and built internal tools",
         items: [
           "Improved overall effectiveness of talent sourcing team by 3x",
-          "Increased utilisation of internal search tools by 5x by collaborating with talents team to revamp search heuristics",
+          "Increased utilisation of search tools by 5x by collaborating with talents team to revamp search heuristics",
           "Single-handedly deployed ElasticSearch full-text search for our database of 25,000",
           "Reduced mishunting rates by 90% by creating a Google Chrome Extension for detecting existing users within LinkedIn pages"
         ]
@@ -47,7 +47,7 @@ var experiences = [
       heading: "Technical Project Management",
       items: [
         "Managed 4 software projects with agile methodology",
-        "Achieved 90% of release schedule by managing and prioritising build with engineers",
+        "Achieved 90% of release schedule by managing and prioritising features with engineers",
         "Cut technical audit time by 50x by rewriting bash shell scripts",
         "Cut time taken to discover production error by 2 days by writing scripts to predict behavior",
         "Executed a technical proof-of-concept for a multi-tenancy web hosting system",
@@ -148,7 +148,7 @@ var educations = [
   {
     title: "KTH Royal Institute of Technology",
     date: "Stockholm, Sweden • 2011 - 2012",
-    subtext: "NUS Overseas Collages programme • Minor in Technopreneurship"
+    subtext: "NUS Overseas Collages programme, Minor in Technopreneurship"
   }
 ]
 
@@ -159,11 +159,11 @@ var skills = [
   },
   {
     title: "People management",
-    summary: "Experience in managing both up and down. Able to influence and manage executive stakeholders by and expressing technology in business context. Able to communicate, direct and manage teams for effective work output.",
+    summary: "Experience in managing both up and down. Able to influence and manage executive stakeholders by expressing technological concerns in the context of business. Able to communicate, direct and manage teams for effective work output.",
   },
   {
     title: "Mentoring",
-    summary: "Mentored more than 10+ individuals on personal and technical growth. Advised more than 20+ teams on matters of team effectiveness, leadership and decision making.",
+    summary: "Mentored 10+ individuals on personal and technical growth. Advised more than 20+ teams on matters of team effectiveness, leadership and decision making.",
   }
 ]
 
