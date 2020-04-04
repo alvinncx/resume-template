@@ -48,8 +48,8 @@ var experiences = [
       items: [
         "Managed 4 software projects with agile methodology",
         "Achieved 90% of release schedule by managing and prioritising build with engineers",
-        "Cut technical audit time by 50x by writing supporting shell scripts",
-        "Cut time taken to discover error by 2 days by writing scripts to predict behavior",
+        "Cut technical audit time by 50x by rewriting bash shell scripts",
+        "Cut time taken to discover production error by 2 days by writing scripts to predict behavior",
         "Executed a technical proof-of-concept for a multi-tenancy web hosting system",
         "Recovered 20% of project budget by reallocating engineers to suitable projects",
         "Held financial responsibility for project margins, budgeting, human resource planning and R&D budgets",
@@ -76,10 +76,10 @@ var experiences = [
       items: [
         "Single-handedly built the entire web application in 2 months to serve initial 2000 users",
         "Provided technical experitise to conceptualise 'Grab for Home Services' platform in Singapore and raised $600,000 in funding",
-        "Decreased server maintenance time to practically zero by choosing serverless platform",
+        "Decreased server maintenance time to practically zero by moving to serverless platform",
         "Formulated and built a ranking algorithm using geo-coordinates and behaviorial patterns",
         "Increased platform retention rate by implementing e-payment systems and in-app chat",
-        "Supported new CTO in all frontend and backend development duties."
+        "Supported new CTO in all frontend and backend development duties"
       ]
     },
     {
@@ -88,7 +88,7 @@ var experiences = [
         "Developed product roadmap, metrics and release calendar",
         "Achieved 13% month-on-month growth through careful product marketing and engineering",
         "Kept abadoned feature to less than 5% by implementing user research and usability testing",
-        "Outperformed market CPC average by 30% margin by carefully optimising paid advertisement platforms",
+        "Outperformed paid ads by 30% margin by carefully optimising paid advertisement platforms",
       ]
     }
     ]
@@ -106,7 +106,7 @@ var technologies = [
   },
   {
     heading: "Databases",
-    list: ["PostgresSQL", "ElasticSearch"].join(", ")
+    list: ["PostgreSQL", "ElasticSearch"].join(", ")
   },
   {
     heading: "Server / Cloud",
@@ -125,18 +125,16 @@ var personals = [
   },
   {
     title: "CaptureBin.dev",
-    date: "Sep 2019",
+    date: "Sep 2019 • https://capturebin.dev",
     list: [
-      "Built a developer tool that helps users capture and inspect HTTP requests in real time. Built with the Phoenix/Elixir stack.",
-      "https://capturebin.dev",
+      "Built a developer tool that helps users capture and inspect HTTP requests in real time. Built with the Phoenix/Elixir stack."
     ]
   },
   {
     title: "Expressor",
-    date: "Aug 2018",
+    date: "Aug 2018 • https://github.com/alvinncx/expressor",
     list: [
-      "Built a web-based, interactive calculator that evaluates expressions, variables & conditions. Built with ReactJS and Redux.",
-      "https://github.com/alvinncx/expressor",
+      "Built a web-based, interactive calculator that evaluates expressions, variables & conditions. Built with ReactJS and Redux."
     ]
   }
 ]
@@ -150,7 +148,7 @@ var educations = [
   {
     title: "KTH Royal Institute of Technology",
     date: "Stockholm, Sweden • 2011 - 2012",
-    subtext: "Minor in Technopreneurship"
+    subtext: "NUS Overseas Collages programme • Minor in Technopreneurship"
   }
 ]
 
