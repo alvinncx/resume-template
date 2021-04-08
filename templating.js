@@ -1,8 +1,42 @@
 var experiences = [
   {
+    title: "Software Engineer",
+    company: "Government Technology Agency",
+    date: "Singapore • Jul 2020 - Current",
+    summary: "Developing and maintaining software features for a citizen-facing portal. 80% of time spent on designing and writing code, 20% on improving observability and code reviews.",
+    subsections: [
+      { 
+        heading: "Hands-on software engineering",
+        items: [
+          "Shipped 90% of features within schedule",
+          "Advocated and restructured codebase to utilise Ruby on Rails conventions",
+          "Resolved 2000+ failing tests related to Ruby on Rails major version upgrade",
+        ]
+      },
+      {
+        heading: "Raised productivity and effectiveness of team",
+        items: [
+          "Initiated Ping-Pong Programming at every opportunity to reduce code waste and improve code testability",
+          "Advocated the use of Rubocop code linting tool to improve code consistency within the team",
+          "Led discussion on code conventions within the team",
+          "Wrote custom Rubocop linting rules by utilising Ruby AST",
+        ]
+      },
+      { 
+        heading: "Improved error observability for legacy system",
+        items: [
+          "Led discussions around error handling with the team",
+          "Prepared Splunk queries and reports to find unhandled exceptions among a sea of logs",
+          "Uncovered 50+ new daily errors hidden in the system",
+          "Worked with Product Owner to prioritise and resolve errors"
+        ]
+      },
+    ]
+  },
+  {
     title: "Head of Product Engineering",
     company: "NodeFlair",
-    date: "Singapore • Dec 2019 - Current",
+    date: "Singapore • Dec 2019 - Jun 2020",
     summary: "Leading a cross-functional team of software engineers to build features for a 3 sided digital platform for the tech recruitment market. 70% of time spent on designing and writing code, 30% on system architecture planning, code reviews and retrospectives.",
     subsections: [
       { 
@@ -12,17 +46,15 @@ var experiences = [
           "Raised test coverage from 0% to 60% by writing hundreds of tests",
           "Refactored major parts of state management using finite state machines",
           "Cut query response times by 2x by rewriting SQL statements and optimising ORM models",
-          "Cut AWS server costs by 60% through capacity analysis and planning",
-          "Introduced functional programming methodologies to greatly simplify complex business logic"
+          "Cut AWS server costs by 60% through capacity analysis and planning"
         ]
       },
       {
         heading: "Raised productivity and morale of engineering team",
         items: [
-          "Cut frontend built times by 20x by reconfiguring webpack in our development workflow",
+          "Cut frontend built times by 20x by reconfiguring Webpack in our development workflow",
           "Improved deployment confidence by setting up continuous integration and automated testing tool chain",
-          "Increased release cadence by 3x by implementing trunk based developement",
-          "Eliminated 10% of dead code through code analysis",
+          "Increased release cadence by 3x by introducing trunk based developement",
           "Increased deployment frequency from weekly to daily by implementing blue-green deployments",
           "Increased developer competence by conducting monthly tech retrospectives",
         ]
@@ -32,7 +64,6 @@ var experiences = [
         items: [
           "Improved overall effectiveness of talent sourcing team by 3x",
           "Increased utilisation of search tools by 5x by collaborating with talents team to revamp search heuristics",
-          "Single-handedly deployed ElasticSearch full-text search for our database of 25,000",
           "Reduced mishunting rates by 90% by creating a Google Chrome Extension for detecting existing users within LinkedIn pages"
         ]
       },
@@ -49,17 +80,14 @@ var experiences = [
         "Managed 4 software projects with agile methodology",
         "Achieved 90% of release schedule by managing and prioritising features with engineers",
         "Cut technical audit time by 50x by rewriting bash shell scripts",
-        "Cut time taken to discover production error by 2 days by writing scripts to predict behavior",
-        "Executed a technical proof-of-concept for a multi-tenancy web hosting system",
         "Recovered 20% of project budget by reallocating engineers to suitable projects",
         "Held financial responsibility for project margins, budgeting, human resource planning and R&D budgets",
       ]
     },
     {
-      heading: "Technical Advisory and Foresight",
+      heading: "Technical Consulation and Strategy",
       items: [
         "Served as chief technical advisor for the entire business group in matters of software engineering",
-        "Mediated technical meetings relating to the Open Electricity Market",
         "Saved $50,000 in costs by conducting technical and security audits in-house",
         "Wrote standard operating procedures for software engineering processes and error handling processes",
         "Spearheaded a new data protection and security initiative to protect the business group against data breaches",
@@ -70,13 +98,12 @@ var experiences = [
     title: "Product Manager / Full-Stack Engineer",
     company: "AfterYou",
     date: "Singapore • Nov 2014 - May 2018",
-    summary: "Led a cross-functional team comprising of designers and engineers to grow the AfterYou Home Services platform from 0 to 16,000 users. 50% of time spent on product management, 50% on writing code",
+    summary: "Led a cross-functional team of designers and engineers to grow the AfterYou Home Services from 0 to 16,000 users. 50% of time spent on product management, 50% on writing code",
     subsections: [{
       heading: "Hands-on software engineering",
       items: [
-        "Single-handedly built the entire web application in 2 months to serve initial 2000 users",
-        "Provided technical experitise to conceptualise 'Grab for Home Services' platform in Singapore and raised $600,000 in funding",
-        "Decreased server maintenance time to practically zero by moving to serverless platform",
+        "Built the entire web application in 2 months to serve initial 2000 users",
+        "Conceptualised 'Grab for Home Services' platform in Singapore and raised $600,000 in funding",
         "Formulated and built a ranking algorithm using geo-coordinates and behaviorial patterns",
         "Increased platform retention rate by implementing e-payment systems and in-app chat",
         "Supported new CTO in all frontend and backend development duties"
@@ -87,8 +114,8 @@ var experiences = [
       items: [
         "Developed product roadmap, metrics and release calendar",
         "Achieved 13% month-on-month growth through careful product marketing and engineering",
-        "Kept abadoned feature to less than 5% by implementing user research and usability testing",
-        "Outperformed paid ads by 30% margin by carefully optimising paid advertisement platforms",
+        "Kept abandoned feature to less than 5% by implementing user research and usability testing",
+        "Outperformed market performance of paid ads by 30% margin",
       ]
     }
     ]
@@ -98,7 +125,7 @@ var experiences = [
 var technologies = [
   {
     heading: "Programming",
-    list: ["Ruby", "Python", "Elixir", "Javascript"].join(", ")
+    list: ["Ruby", "Python", "Elixir", "Typescript", "Javascript"].join(", ")
   },
   {
     heading: "Web",
@@ -110,7 +137,7 @@ var technologies = [
   },
   {
     heading: "Server / Cloud",
-    list: ["MacOS", "Linux", "AWS", "Vultr"].join(", ")
+    list: ["MacOS", "Linux", "AWS"].join(", ")
   }
 ]
 
@@ -124,10 +151,10 @@ var personals = [
     ]
   },
   {
-    title: "CaptureBin.dev",
-    date: "Sep 2019 • https://capturebin.dev",
+    title: "On Track Finance",
+    date: "Feb 2020 • https://ontrack.finance",
     list: [
-      "Built a developer tool that helps users capture and inspect HTTP requests in real time. Built with the Phoenix/Elixir stack."
+      "Built a personal finance tool to forecast financial health. Built with React."
     ]
   },
   {
@@ -140,6 +167,10 @@ var personals = [
 ]
 
 var educations = [
+  {
+    title: "Certified Scrum master",
+    date: "Singapore • Nov 2020"
+  },
   {
     title: "National University of Singapore, B.Eng, Engineering Science",
     date: "Singapore • 2009 - 2014",
@@ -154,8 +185,8 @@ var educations = [
 
 var skills = [
   {
-    title: "Product-centric Software Development",
-    summary: "Hands-on software engineer with a track record of designing, implementing and launching applications with the user in mind. Able to appreciate user and business concerns, and prioritise for minimum time to market.",
+    title: "Product-centric Software Engineering",
+    summary: "Hands-on software engineer with a track record of designing, implementing and launching applications with the user in mind. Able to appreciate user and business concerns, and prioritise for market impact.",
   },
   {
     title: "People management",
@@ -163,7 +194,7 @@ var skills = [
   },
   {
     title: "Mentoring",
-    summary: "Mentored 10+ individuals on personal and technical growth. Advised more than 20+ teams on matters of team effectiveness, leadership and decision making.",
+    summary: "Mentored 10+ individuals on personal and technical growth. Advised 20+ teams on matters of team effectiveness, leadership and decision making.",
   }
 ]
 
